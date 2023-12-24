@@ -1,0 +1,50 @@
+//Header
+#Header {
+    background: linear-gradient($headerRgba), url(/Image/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+    
+    .container{
+        padding: 45px 0 45px 35px;
+    }
+
+    .page-header {
+        position: relative;
+        border-left: 15px solid $secondColor;
+    }
+
+    .container::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 9px;
+        width: 120px;
+        height: calc(83% + 30px);
+        border-top: 15px solid $secondColor;
+        border-bottom: 15px solid $secondColor;
+    }
+
+    .container::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -5px;
+        height: calc(83% + 30px);
+        border-left: 15px solid $secondColor;
+        
+    }
+
+    h1 {
+        font-weight: 800;
+    }
+
+    a {
+        color: #26BC89;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item::before {
+        color: $whiteColor;
+    }
+
+
+}

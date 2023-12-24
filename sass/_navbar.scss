@@ -1,0 +1,111 @@
+.menu-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+
+    .item {
+        height: 37px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            font-weight: 500;
+
+
+            li {
+                position: relative;
+                padding: 10px 3px;
+                font-size: 15px;
+                font-family: "Heebo", sans-serif;
+                margin-right: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $blackColor;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: $thirdColor;
+
+                    }
+                }
+
+                &:hover {
+                    .dropdown-menu {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+
+                        ul {
+                            display: block;
+                            margin: 10px;
+
+                            li {
+                                width: 150px;
+                                padding: 10px;
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .dropdown-menu {
+        display: none;
+        z-index: 1000;
+
+        ul {
+            li {
+                &:hover {
+                    .dropdown-menu-1 {
+                        display: block;
+                        position: absolute;
+                        left: 150px;
+                        top: 0;
+                        background-color: $whiteColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown-menu-1 {
+        display: none;
+        z-index: 1000;
+    }
+
+    .fas {
+        float: right;
+        margin-left: 10px;
+        padding-top: 3px;
+    }
+
+    .logo {
+        color: $thirdColor;
+    }
+
+    .button {
+        border: none;
+        color: $whiteColor;
+        padding: 24px 40px;
+        background-color: $buutonColor;
+        display: inline-block;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        transition: .5s;
+        line-height: 30px;
+        border-radius: 0;
+    }
+
+}
+
+
+
+

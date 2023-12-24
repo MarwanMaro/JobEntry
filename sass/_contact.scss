@@ -1,0 +1,43 @@
+//Contact
+#Contact{
+    .textarea{
+        height: 150px;
+        
+    }
+
+    .icon{
+        color: $fortyColor;
+        width: 45px;
+        height: 45px;
+        font-size: 15px;
+        
+    }
+    .bg-light{
+        background-color: $mainColor!important;
+    }
+    .button{
+        background-color: $thirdColor;
+        border: none;
+        color: white;
+        padding: 20px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 700;
+        border-radius: 2px;
+        &:hover{
+        color: $whiteColor;
+        background-color: $secondColor;
+        transition: 0.5s all;
+        } 
+    }
+    a{
+        text-decoration: none;
+        color: $firstColor;
+    }
+
+    h1{
+        font-weight: bolder;
+    }
+}
